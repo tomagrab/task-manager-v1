@@ -1,38 +1,60 @@
-# create-svelte
+# Task Manager with SvelteKit
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project is a simple task manager application built with SvelteKit. Users can create multiple lists, add tasks to those lists, and delete lists as needed. The application's front-end code is written in Svelte with TypeScript.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+Create lists with custom names.
+Add tasks to lists, including task names and content.
+Delete individual lists.
+Responsive grid layout to display lists.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Installation
 
-# create a new project in my-app
-npm create svelte@latest my-app
+### Prerequisites
+
+Node.js >= 14.x
+
+### Steps
+
+1. Clone the repository:
+
+```
+git clone https://github.com/yourusername/task-manager-sveltekit.git
 ```
 
-## Developing
+2. Navigate to the project directory:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```
+cd task-manager-sveltekit
+```
 
-```bash
+3. Install the dependencies:
+
+```
+npm install
+```
+
+4. Start the development server:
+
+```
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+5. Open your browser and navigate to http://localhost:3000 to see the application running.
 
-To create a production version of your app:
+## Usage
 
-```bash
-npm run build
-```
+Create a List: Use the form at the top of the page to create a new list. Enter a name for the list and click "Create list."
 
-You can preview the production build with `npm run preview`.
+Add Tasks to a List: Each list has its own form for adding tasks. Enter the task name and content and click "Create task."
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Delete a List: Click the "Delete" button next to a list's name to remove it from the application.
+
+## Contributing
+
+If you would like to contribute to this project, please fork the repository, create a feature branch, and send us a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE.md file for details.
